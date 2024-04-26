@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Joshua's Assignment 2
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+    
+    <body style="background-color: rgb(0, 0, 0);">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="networks" src="img/networks.png" onmouseover="this.src='img/networksstroke.png';" onmouseout="this.src='img/networks.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="motherboard" src="img/motherboard.png" onmouseover="this.src='img/motherboardstroke.png';" onmouseout="this.src='img/motherboard.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="databoard" src="img/databoard.png" onmouseover="this.src='img/databoardstroke.png';" onmouseout="this.src='img/databoard.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="interface" src="img/interface.png" onmouseover="this.src='img/interfacestroke.png';" onmouseout="this.src='img/interface.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="joystick" src="img/joystick.png" onmouseover="this.src='img/joystickstroke.png';" onmouseout="this.src='img/joystick.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="controller" src="img/controller.png" onmouseover="this.src='img/controllerstroke.png';" onmouseout="this.src='img/controller.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="connections" src="img/connections.png" onmouseover="this.src='img/connectionsstroke.png';" onmouseout="this.src='img/connections.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut8" src="img/donut_08.png" onmouseover="this.src='img/donut_08_dark.png';" onmouseout="this.src='img/donut_08.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut9" src="img/donut_09.png" onmouseover="this.src='img/donut_09_dark.png';" onmouseout="this.src='img/donut_09.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/metal.mp3");
+            var sound2 = new buzz.sound("sound/glitch2.mp3");
+            var sound3 = new buzz.sound("sound/glitch3.mp3");
+            var sound4 = new buzz.sound("sound/glitch4.mp3");
+            var sound5 = new buzz.sound("sound/glitch5.mp3");
+            var sound6 = new buzz.sound("sound/glitch6.mp3");
+            var sound7 = new buzz.sound("sound/glitch7.mp3");
+            var sound8 = new buzz.sound("sound/glitch8.mp3");
+            var sound9 = new buzz.sound("sound/glitch9.mp3");
+
+            window.onload = function() {
+                document.getElementById('networks').addEventListener('click', function () {sound1.play();});
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('donut4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('donut5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('donut6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('donut7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('donut8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('donut9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
